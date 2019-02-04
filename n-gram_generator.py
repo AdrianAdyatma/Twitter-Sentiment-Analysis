@@ -2,9 +2,9 @@ import re
 
 filePositive = open('positive.txt')
 
-for list in filePositive:
-    a = (list.replace(" ",""))
-    print(a)
+# for list in filePositive:
+#     a = (list.replace(" ",""))
+#     print(a)
 
 def generate_ngrams(s, n):
     s = s.lower()
@@ -20,6 +20,6 @@ def generate_ngrams(s, n):
     return [" ".join(ngram) for ngram in ngrams]
 
 
-sent = input("Masukkan kalimat; ")
+sent = input("Masukkan kalimat : ")
 ngram = int(input("Masukkan (n)gram: "))
 print('hasil: ',generate_ngrams(sent,ngram))

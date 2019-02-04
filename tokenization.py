@@ -1,6 +1,7 @@
 from nltk.tokenize import TweetTokenizer
 
 import credentials_var as cred
+import formalization
 
 count = 0
 
@@ -8,6 +9,13 @@ count = 0
 for element in cred.raw_findAll:
     message = element["text"]
     tokens = TweetTokenizer().tokenize(message.lower())
+
+    # for token in tokens:
+    #     formalized = []
+    #     for i in token:
+    #         word = formalization.formalize(token[i])
+    #         formalized.append(word)
+
 
     # Check if tokens already inserted
     if not cred.tokens.count_documents({"id_str": element["id_str"]}, limit=1):
