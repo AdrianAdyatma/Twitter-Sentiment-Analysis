@@ -15,7 +15,7 @@ sqlCursor = sqlDb.cursor()
 
 # MongoDB Database identifier & connection
 client = pymongo.MongoClient('localhost', 27017)
-mongoDb = client.TweetSentimentAnalyzer
+mongoDb = client.TSA_Database
 raw_tweets = mongoDb.tweets
 raw_findAll = raw_tweets.find()
 tokens = mongoDb.tokens

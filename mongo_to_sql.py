@@ -10,7 +10,7 @@ for element in list_results:
     try:
         sql = "INSERT INTO tabelmantap (id_str, text) VALUES (%s, %s)"
         val = (element["id_str"], element["text"])
-        # val = (element["id_str"], element["retweeted_status.extended_tweet.full_text"])
+        # val = (element["id_str"], element["retweeted_status"]["extended_tweet.full_text"])
         cred.sqlCursor.execute(sql, val)
 
         # Commit all changes to sql

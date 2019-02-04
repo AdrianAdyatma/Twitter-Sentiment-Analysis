@@ -1,26 +1,19 @@
-import credentials_var as cred
+file = open('formalizationDict.txt')
 
-file = open('kata-dasar-all.txt')
-
-# def cutoff(string, pattern):
-#    idx = string.find(pattern)
-#    return string[:idx if idx != -1 else len(string)]
-
-def formalize(word):
-    for dict in file:
-            if word == dict:
-                return dict
+def formalizationDict(kata):
+    for list in file:
+        unBaku, Baku = list.split(':')
+        # print(list.split())
+        # print(list)
+        if (kata in list) and len(kata)==len(unBaku):
+            print(list)
+            if kata in unBaku:
+                # print(list)
+                return Baku
             else:
-                return word
+                return kata
+        # elif (kata in list) and len(kata)!= len(unBaku):
+    return kata
 
-
-# sent = input("Masukan Kalimat : ")
-# print("Hasil : ", formalize(sent))
-
-for tokens in cred.tokens_findAll:
-    # print(type(tokens), len(tokens))
-    for element in tokens:
-        for token in range(len(tokens)-2):
-            # print(tokens[str(token)]) #String
-            token_ed = formalize(tokens[str(token)])
-            print(token_ed)
+sent = input("Masukan Kalimat : ")
+print("Hasil : ",formalizationDict(sent))
