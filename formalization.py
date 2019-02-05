@@ -4,7 +4,7 @@ import itertools
 
 # First, check in formal word from KBBI
 def formalize1(original):
-    with open('kata_kelas_makna.tsv', encoding="utf8") as dictionary_1:
+    with open('references/kata_kelas_makna.tsv', encoding="utf8") as dictionary_1:
         reader = csv.DictReader(dictionary_1, dialect='excel-tab')
         # Check every row for same word, if exists then return True, if doesn't then return False
         for row in reader:
@@ -14,7 +14,7 @@ def formalize1(original):
 
 # Check word from 'alay' dictionary
 def formalize2(original):
-    with open('formalization_dictionary.txt') as dictionary_2:
+    with open('references/formalization_dictionary.txt') as dictionary_2:
         # Check every row for same word, if exists then return correct word, if doesn't then return False
         for row in dictionary_2:
             un_baku, baku = row.split(':')
@@ -40,6 +40,7 @@ def formalize(original):
             print("masuk 4")
             formalizing = ''.join(c[0] for c in itertools.groupby(formalizing))
         i += 1
+    return formalizing
 
 
 word = input("Masukkan kata : ")

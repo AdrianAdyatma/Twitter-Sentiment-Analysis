@@ -1,5 +1,5 @@
-filePositive = open('positive.txt')
-fileNegative = open('negative.txt')
+filePositive = open('references/positive.txt')
+fileNegative = open('references/negative.txt')
 
 
 def weighting(kata):
@@ -13,13 +13,12 @@ def weighting(kata):
         if kata == list_ngv:
             neg_count += 1
 
-    result = pos_count - neg_count
-    if result > 1:
-        result = 1
-    elif result < -1:
-        result = -1
-    return result
+    return pos_count - neg_count
 
 
 sent = input("Masukan kata : ")
 print("Hasil : ", weighting(sent))
+
+# MASIH PERLU PERBAIKAN
+# TAMBAHIN CEK KESAMAAN PANJANG
+# PAKE N GRAM
