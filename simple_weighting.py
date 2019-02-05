@@ -6,11 +6,11 @@ def weighting(kata):
     pos_count = 0
     neg_count = 0
     for list_ptv in filePositive:
-        if kata in list_ptv:
+        if kata == list_ptv:
             pos_count += 1
 
     for list_ngv in fileNegative:
-        if kata in list_ngv:
+        if kata == list_ngv:
             neg_count += 1
 
     result = pos_count - neg_count
