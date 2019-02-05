@@ -1,31 +1,49 @@
 import csv
+import itertools
 
 
-# def formalize1(original):
-#     for words in dictionary_1:
-#         kata, kelas, makna = words.split('  ')
-#         if (original in kata) and len(original) == len(kata):
-#             return kata
+# First, check in formal word from KBBI
+def formalize1(original):
+    with open('kata_kelas_makna.tsv', encoding="utf8") as dictionary_1:
+        reader = csv.DictReader(dictionary_1, dialect='excel-tab')
+        # Check every row for same word, if exists then return True, if doesn't then return False
+        for row in reader:
+            if original == row.get("kata"):
+                return True
 
-# def formalize2(original):
-#     for words in dictionary_2:
-#         un_baku, baku = words.split(':')
-#         if (original in un_baku) and len(original) == len(un_baku):
-#             return baku
 
-# def formalize1(original):
-#     with open('kata_kelas_makna.txt') as dictionary_1:
-#         reader = csv.DictReader(dictionary_1, dialect='excel-tab')
-#         for words in reader:
-#             if (original )
-
+# Check word from 'alay' dictionary
 def formalize2(original):
     with open('formalization_dictionary.txt') as dictionary_2:
-        for words in dictionary_2:
-            un_baku, baku = words.split(':')
+        # Check every row for same word, if exists then return correct word, if doesn't then return False
+        for row in dictionary_2:
+            un_baku, baku = row.split(':')
             if original == un_baku:
                 return baku
 
 
+# Main formalization function
+def formalize(original):
+    formalizing = original
+    i = 0
+    while i < 3:
+        if formalize1(formalizing) is True:
+            print("masuk 1")
+            return formalizing
+        elif formalize2(formalizing) is not None:
+            print("masuk 2")
+            return formalize2(formalizing)
+        elif i == 0:
+            print("masuk 3")
+            formalizing = ''.join([c for c in formalizing if not c.isdigit()])
+        elif i == 1:
+            print("masuk 4")
+            formalizing = ''.join(c[0] for c in itertools.groupby(formalizing))
+        i += 1
+
+
 word = input("Masukkan kata : ")
-print("Hasil : ", formalize2(word.lower()))
+print("Hasil : ", formalize(word.lower()))
+
+# Cipika cipiki
+

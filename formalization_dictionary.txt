@@ -31,6 +31,7 @@ ama:sama
 ambilin:ambilkan
 ambl:ambil
 ancur:hancur
+anjink:anjing
 anjir:anjing
 anjrit:anjing
 ank:anak
@@ -696,7 +697,7 @@ muup:maaf
 muupz:maaf
 muuv:maaf
 mw:mau
-mw:now watching
+nw:now watching
 n:dan
 nal:kenal
 nanam:menanam
