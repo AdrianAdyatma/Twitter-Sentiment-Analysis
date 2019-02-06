@@ -14,7 +14,7 @@ def formalize1(original):
 
 # Check word from 'alay' dictionary
 def formalize2(original):
-    with open('references/formalization_dictionary.txt') as dictionary_2:
+    with open('references/alay_dict.txt') as dictionary_2:
         # Check every row for same word, if exists then return correct word, if doesn't then return False
         for row in dictionary_2:
             un_baku, baku = row.split(':')
@@ -27,12 +27,12 @@ def formalize(original):
     formalizing = original
     i = 0
     while i < 3:
-        if formalize1(formalizing) is True:
-            print("masuk 1")
-            return formalizing
-        elif formalize2(formalizing) is not None:
+        if formalize2(formalizing) is not None:
             print("masuk 2")
             return formalize2(formalizing)
+        elif formalize1(formalizing) is True:
+            print("masuk 1")
+            return formalizing
         elif i == 0:
             print("masuk 3")
             formalizing = ''.join([c for c in formalizing if not c.isdigit()])

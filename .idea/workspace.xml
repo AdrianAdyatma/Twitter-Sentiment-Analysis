@@ -5,9 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cek_kamus.py" beforeDir="false" afterPath="$PROJECT_DIR$/cek_kamus.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/references/formalization_dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/references/formalization_dictionary.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/references/negative.txt" beforeDir="false" afterPath="$PROJECT_DIR$/references/negative.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/references/positive.txt" beforeDir="false" afterPath="$PROJECT_DIR$/references/positive.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/formalization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/references/formalization_dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/references/alay_dict.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/formalization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="42" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="42" />
+            <state relative-caret-position="740">
+              <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -32,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cek_kamus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="180">
+              <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -42,46 +41,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/references/negative.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="2351" column="6" lean-forward="true" selection-start-line="2351" selection-start-column="6" selection-end-line="2351" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/references/positive.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="293" column="6" lean-forward="true" selection-start-line="293" selection-start-column="6" selection-end-line="293" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/references/kata_kelas_makna.tsv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925060">
-              <caret line="46253" column="58" selection-start-line="46253" selection-start-column="57" selection-end-line="46253" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/references/formalization_dictionary.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11000">
-              <caret line="550" column="18" selection-start-line="550" selection-start-column="18" selection-end-line="550" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2860">
-              <caret line="143" column="6" lean-forward="true" selection-start-line="143" selection-start-column="6" selection-end-line="143" selection-end-column="6" />
+            <state relative-caret-position="6820">
+              <caret line="341" column="7" lean-forward="true" selection-start-line="341" selection-start-column="7" selection-end-line="341" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -89,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tokenization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="163">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
@@ -118,8 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gada</find>
-      <find>don j</find>
       <find>bokep</find>
       <find>berdikari</find>
       <find>hi</find>
@@ -148,6 +109,8 @@
       <find>K</find>
       <find>S</find>
       <find>T</find>
+      <find>puasa</find>
+      <find>remas</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -165,12 +128,13 @@
         <option value="$PROJECT_DIR$/COBACOK.py" />
         <option value="$PROJECT_DIR$/formalization_dictionary.txt" />
         <option value="$PROJECT_DIR$/simple_weighting.py" />
-        <option value="$PROJECT_DIR$/formalization.py" />
         <option value="$PROJECT_DIR$/references/kata_kelas_makna.tsv" />
         <option value="$PROJECT_DIR$/references/formalization_dictionary.txt" />
         <option value="$PROJECT_DIR$/references/negative.txt" />
-        <option value="$PROJECT_DIR$/cek_kamus.py" />
         <option value="$PROJECT_DIR$/references/positive.txt" />
+        <option value="$PROJECT_DIR$/data.txt" />
+        <option value="$PROJECT_DIR$/cek_kamus.py" />
+        <option value="$PROJECT_DIR$/formalization.py" />
       </list>
     </option>
   </component>
@@ -228,7 +192,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cek_kamus">
+  <component name="RunManager" selected="Python.formalization">
     <configuration name="COBACOK" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Twitter-Sentiment-Analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -336,8 +300,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.cek_kamus" />
         <item itemvalue="Python.formalization" />
+        <item itemvalue="Python.cek_kamus" />
         <item itemvalue="Python.simple_weighting" />
         <item itemvalue="Python.COBACOK" />
         <item itemvalue="Python.n-gram_generator" />
@@ -374,8 +338,8 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42553192" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32733223" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5220949" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -478,47 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/formalization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/references/kata_kelas_makna.tsv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925060">
-          <caret line="46253" column="58" selection-start-line="46253" selection-start-column="57" selection-end-line="46253" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/references/formalization_dictionary.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11000">
-          <caret line="550" column="18" selection-start-line="550" selection-start-column="18" selection-end-line="550" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2860">
-          <caret line="143" column="6" lean-forward="true" selection-start-line="143" selection-start-column="6" selection-end-line="143" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tokenization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/n-gram_generator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -526,27 +449,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/references/positive.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="446" column="7" selection-start-line="446" selection-start-column="2" selection-end-line="446" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/references/kata_kelas_makna.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="46239" column="38" selection-start-line="46239" selection-start-column="38" selection-end-line="46239" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/references/negative.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2351" column="6" lean-forward="true" selection-start-line="2351" selection-start-column="6" selection-end-line="2351" selection-end-column="6" />
+        <state relative-caret-position="185">
+          <caret line="1480" column="7" selection-start-line="1480" selection-start-column="2" selection-end-line="1480" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/references/alay_dict.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="546" column="7" selection-start-line="546" selection-start-column="7" selection-end-line="546" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cek_kamus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="180">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/references/positive.txt">
+    <entry file="file://$PROJECT_DIR$/data.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="293" column="6" lean-forward="true" selection-start-line="293" selection-start-column="6" selection-end-line="293" selection-end-column="6" />
+        <state relative-caret-position="6820">
+          <caret line="341" column="7" lean-forward="true" selection-start-line="341" selection-start-column="7" selection-end-line="341" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tokenization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/formalization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

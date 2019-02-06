@@ -4,7 +4,7 @@ from collections import Counter
 
 
 def cek():
-    with open('references/formalization_dictionary.txt') as alay:
+    with open('references/alay_dict.txt') as alay:
         for row1 in alay:
             un_baku, baku = row1.split(':')
             with open('references/kata_kelas_makna.tsv', encoding="utf8") as kbbi:
@@ -17,7 +17,7 @@ def cek():
                         break
 
 
-def cek_ngv():
+def cek_ngv_psv():
     with open('references/positive.txt') as f:
         c = Counter(c.strip().lower() for c in f if c.strip())
     for line in c:
@@ -26,4 +26,4 @@ def cek_ngv():
 
 
 # cek()
-cek_ngv()
+cek_ngv_psv()
