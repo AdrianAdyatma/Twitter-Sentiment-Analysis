@@ -233,8 +233,8 @@ cr:cara
 cucok:cocok
 cuek:tidak acuh
 cuex:cuek
-cuman:Cuma
-cumi:Cuma miscall
+cuman:cuma
+cumi:cuma miscall
 cungkring:kurus tinggi
 cups:culun
 cupu:culun
@@ -548,7 +548,7 @@ kog:kok
 komdis:komisi disiplin
 kompi:komputer
 komsov:komunis sovyet
-komtiong:komunis Tiongkok
+komtiong:komunis tiongkok
 kongkow:kumpul bareng teman-teman
 konjen:konsulat jenderal
 kopdar:kopi darat
@@ -705,7 +705,6 @@ nanam:menanam
 nangis:menangis
 nanya:bertanya
 naon:apa
-napa:kenapa
 napa:kenapa
 napi:narapidana
 napol:narapidana politik
@@ -900,7 +899,6 @@ renstra:rencana strategis
 repp:balas
 reskrim:reserse kriminal
 restik:reserse narkotika
-rhs:Rahasia
 rhs:rahasia
 rmbt:rambut
 rmh:rumah
@@ -1043,8 +1041,8 @@ thd:terhadap
 thn:tahun
 thx:terima kasih
 tilang:bukti pelanggaran
-tipi:TV
-tipiwan:TvOne
+tipi:televisi
+tipiwan:tvone
 tkg:tukang
 tks:terima kasih
 tll:terlalu

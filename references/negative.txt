@@ -44,13 +44,13 @@ antagonis
 antagonisme
 antek
 anti-
-anti-Amerika
-anti-Israel
+anti-amerika
+anti-israel
 anti-kita
 anti-pendudukan
 anti-proliferasi
 anti-putih
-anti-Semit
+anti-semit
 antipati
 antisosial
 antitesis
@@ -235,7 +235,6 @@ bikinan
 bimbang
 binasa
 bingung
-Bingung
 bisa ular
 bising
 blunder
@@ -468,7 +467,6 @@ gasang
 gatal
 gegabah
 gejala
-Gejala
 gelandangan
 gelap
 gelisah
@@ -541,7 +539,7 @@ igauan
 ih
 ikut campur
 ilegal
-Iluminati
+iluminati
 ilusi
 imajiner
 imperialis
@@ -566,7 +564,7 @@ invasif
 irasional
 irasionalitas
 iri
-Iritasi
+iritasi
 ironi
 ironis
 ironisnya
@@ -641,7 +639,6 @@ kebetulan
 kebiadaban
 kebiasaan
 kebingungan
-KEBINGUNGAN
 kebiri
 kebisingan
 kebobolan
@@ -685,7 +682,7 @@ kegugupan
 kehabisan
 kehancuran
 kehebohan
-Keheranan
+keheranan
 kehilangan
 kehilangan keseimbangan
 kehinaan
@@ -740,7 +737,6 @@ keletihan
 keliru
 keluar
 keluhan
-Keluhan
 kelupaan
 kemacetan
 kemalangan
@@ -797,7 +793,6 @@ keriuhan
 kerlip
 keroncongan
 kerugian
-Kerugian
 kerusakan
 kerusuhan
 kerut
@@ -872,7 +867,6 @@ ketidaksetiaan
 ketidaksopanan
 ketidakstabilan
 ketidaktahuan
-Ketidaktelitian
 ketidaktelitian
 ketidakteraturan
 ketidaktertarikan
@@ -1025,7 +1019,6 @@ lumpur
 lunak
 lupa
 lusuh
-Maaf
 mabuk
 mabuk kepayang
 mafia
@@ -1123,7 +1116,6 @@ membalas
 membalikkan
 membanjiri
 membantah
-Membantah
 membara
 membatalkan
 membatasi
@@ -1383,7 +1375,6 @@ mengurangi
 menguras
 mengusir
 mengutuk
-Mengutuk
 meniadakan
 menidurkan
 menimbulkan
@@ -1670,7 +1661,7 @@ pembenci
 pembengkakan
 pemberang
 pemberontakan
-Pembobolan
+pembobolan
 pembohong
 pembongkar
 pemborosan
@@ -1832,7 +1823,7 @@ pesta
 pesta besar
 pesuruh
 petualangan
-PHK
+phk
 picik
 picketed
 pidana
@@ -1866,7 +1857,6 @@ putus
 putus asa
 racun
 radikal
-Radikal
 radikalisasi
 ragu
 ragu-ragu
@@ -1941,7 +1931,6 @@ sakit-penggunaan
 sakitan
 sakitnya tuh disini
 salah
-Salah
 salah baca
 salah hitung
 salah informasi
@@ -2009,7 +1998,6 @@ serakah
 seram
 serampangan
 serangan
-Serangan
 serangan gencar
 seret
 serius
@@ -2218,7 +2206,7 @@ terlibat
 termiskin
 ternoda
 teror
-terorirs
+teroris
 terorisme
 terpencil
 terpengaruh
@@ -2348,7 +2336,7 @@ tindak pencegahan
 tindakan ekstrimis
 tindakan merugikan
 tindakan yg bodoh
-tinggi harga-
+tinggi harga
 tinggi hati
 tinju
 tipis
@@ -2365,17 +2353,15 @@ traped
 trauma
 traumatis
 tuduhan
-Tuduhan
 tukang daging
 tukang fitnah
 tukang jualan
-Tukang onar
+tukang onar
 tuli
-Tumbang
+tumbang
 tumpul
 tuna karya
 tunggul
-Tunggul
 tusukan
 uap
 ugal-ugalan
@@ -2399,4 +2385,4 @@ was-was
 waspada
 wastafel
 ya silahkan saja
-Yahudi
+yahudi

@@ -237,7 +237,7 @@ ditingkatkan
 diverifikasi
 dorongan
 duanya
-Dukung
+dukung
 dukungan
 durian runtuh
 edukatif
@@ -503,7 +503,7 @@ kooperatif
 koperasi
 korek api
 kreatif
-Kualitas terbaik
+kualitas terbaik
 kualitas tinggi
 kuasa
 kuat
@@ -525,7 +525,6 @@ lebih disukai
 lebih hangat
 lebih kencang
 lebih keras
-Lebih memilih
 lebih memilih
 lebih murah
 lebih suka
@@ -801,7 +800,7 @@ pembaruan
 pembebasan
 pembela
 pemberdayaan
-pemberian Tuhan
+pemberian tuhan
 pembersih
 pembetulan
 pemecah masalah
@@ -826,7 +825,6 @@ pengasuhan
 pengembalian dana
 penggemar
 penghargaan
-Penghargaan
 penghemat
 penghematan
 penghematan biaya
@@ -882,7 +880,7 @@ piala
 pikiran-bertiup
 pilihan
 pintar
-Plus
+plus
 populer
 portabel
 positif
@@ -961,7 +959,6 @@ segera
 sehat
 seimbang
 seksi
-Selamat
 selamat
 selayaknya
 selektif
@@ -1151,7 +1148,7 @@ tidak egois
 tidak ternilai
 tipis
 tokoh
-TOP
+top
 trendi
 tulang punggung
 tulus
@@ -1173,9 +1170,8 @@ wahyu
 warna-warni
 waspada
 whooa
-Whooooa
-Wow
-WOW
+whooooa
+wow
 yakin
 yay
 yeah

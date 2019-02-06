@@ -1,5 +1,7 @@
 import csv
 
+from collections import Counter
+
 
 def cek():
     with open('references/formalization_dictionary.txt') as alay:
@@ -10,9 +12,18 @@ def cek():
                 for row2 in reader:
                     if un_baku == row2.get("kata"):
                         with open('data.txt', 'a') as data:
-                            data.write(str(un_baku+" = "+baku+" -- "+row2.get("kata")+"\n"))
+                            data.write(str(un_baku + " = " + baku + " -- " + row2.get("kata") + "\n"))
                         print(un_baku, "=", baku, "--", row2.get("kata"))
                         break
 
 
-cek()
+def cek_ngv():
+    with open('references/positive.txt') as f:
+        c = Counter(c.strip().lower() for c in f if c.strip())
+    for line in c:
+        if c[line] > 1:
+            print(line)
+
+
+# cek()
+cek_ngv()

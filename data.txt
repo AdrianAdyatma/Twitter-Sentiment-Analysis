@@ -320,3 +320,25 @@ togel = toto gelap
  -- togel
 toserba = toko serba ada
  -- toserba
+uda = sudah
+ -- uda
+usah = perlu
+ -- usah
+utang = hutang
+ -- utang
+valas = valuta asing
+ -- valas
+waria = wanita pria
+ -- waria
+warnet = warung internet
+ -- warnet
+wartel = warung telekomunikasi
+ -- wartel
+ya = iya
+ -- ya
+yad = yang akan datang
+ -- yad
+yuk = ayo
+ -- yuk
+yup = iya
+ -- yup
