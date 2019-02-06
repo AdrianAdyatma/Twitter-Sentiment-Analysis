@@ -1,18 +1,13 @@
 import re
 
-filePositive = open('positive.txt')
 
-# for list in filePositive:
-#     a = (list.replace(" ",""))
-#     print(a)
-
-def generate_ngrams(s, n):
-    s = s.lower()
+def generate_ngrams(sentence, n):
+    sentence = sentence.lower()
     # Replace all none alphanumeric characters with spaces
-    s = re.sub(r'[^a-zA-Z0-9\s]', ' ', s)
-    print(s)
+    sentence = re.sub(r'[^a-zA-Z0-9\s]', ' ', sentence)
+    print(sentence)
     # Tokenize
-    tokens = [token for token in s.split(" ") if token != ""]
+    tokens = [token for token in sentence.split(" ") if token != ""]
 
     # Use the zip function to help us generate n-grams
     # Concatentate the tokens into ngrams and return
@@ -22,4 +17,4 @@ def generate_ngrams(s, n):
 
 sent = input("Masukkan kalimat : ")
 ngram = int(input("Masukkan (n)gram: "))
-print('hasil: ',generate_ngrams(sent,ngram))
+print('hasil: ', generate_ngrams(sent, ngram))

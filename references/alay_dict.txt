@@ -3,13 +3,13 @@
 :di
 ababil:abg labil
 abis:habis
-acc:accord
+acc:setuju
 ad:ada
 adlah:adalah
-ah:lah
 adlh:adalah
 adoh:aduh
 afaik:as far as i know
+ah:lah
 aha:tertawa
 ahaha:tertawa
 aing:saya
@@ -59,12 +59,15 @@ aseknya:asyiknya
 asem:asam
 asoy:asyik
 aspal:asli tetapi palsu
+astajim:astagfirullahaladzim
 astrojim:astagfirullahaladzim
 astul:asal tulis
+asu:anjing
 ath:kalau begitu
 ato:atau
 atuh:kalau begitu
-au ah:tidak mau tahu
+au:tahu
+au ah:tahu lah
 ava:avatar
 awak:saya
 aws:awas
@@ -404,6 +407,7 @@ helo:halo
 helow:halo
 hey:hai
 hi:hai
+hj:haji
 hlm:halaman
 hlng:hilang
 hny:hanya
@@ -770,6 +774,7 @@ ngubek2:mencari-cari
 ngumpul:berkumpul
 ngurus:mengurus
 ni:ini
+nich:nih
 nie:ini
 niech:nih
 nih:ini
@@ -784,7 +789,7 @@ nobar:nonton bareng
 nongkrong:kumpul-kumpul
 np:now playing
 nrp:narapidana
-ntar:nanti
+ntap:mantap
 ntar:sebentar
 ntn:nonton
 nuhun:terima kasih

@@ -46,5 +46,3 @@ def formalize(original):
 word = input("Masukkan kata : ")
 print("Hasil : ", formalize(word.lower()))
 
-# Cipika cipiki
-
