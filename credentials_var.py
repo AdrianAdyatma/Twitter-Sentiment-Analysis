@@ -4,7 +4,7 @@ import mysql.connector
 
 
 # MySQL Database identifier & connection
-sql_db_name = "dbmantap"
+sql_db_name = "tweets_db"
 sqlDb = mysql.connector.connect(
     host="localhost",
     user="root",

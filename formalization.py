@@ -19,14 +19,14 @@ def formalize2(original):
         for row in dictionary_2:
             un_baku, baku = row.split(':')
             if original == un_baku:
-                return baku
+                return baku.replace('\n', '')
 
 
 # Main formalization function
 def formalize(original):
-    formalizing = original
+    formalizing = original.lower()
     i = 0
-    while i < 3:
+    while i < 2:
         if formalize2(formalizing) is not None:
             print("masuk 2")
             return formalize2(formalizing)
@@ -43,6 +43,6 @@ def formalize(original):
     return formalizing
 
 
-word = input("Masukkan kata : ")
-print("Hasil : ", formalize(word.lower()))
+# word = input("Masukkan kata : ")
+# print("Hasil : ", formalize2(word))
 

@@ -2,7 +2,6 @@ import re
 
 
 def generate_ngrams(sentence, n):
-    sentence = sentence.lower()
     # Replace all none alphanumeric characters with spaces
     sentence = re.sub(r'[^a-zA-Z0-9\s]', ' ', sentence)
     print(sentence)
@@ -15,17 +14,20 @@ def generate_ngrams(sentence, n):
     return [" ".join(ngram) for ngram in ngrams]
 
 
-sent = input("Masukkan kalimat : ")
-ngram = int(input("Masukkan (n)gram: "))
+# sent = input("Masukkan kalimat : ")
+sent = "anda baik sekali alam mimpi itu indah terbaik melebihi alam mimpi"
+ngram = 2
 list_hasil = generate_ngrams(sent, ngram)
-print('hasil: ', list_hasil,  list_hasil[0])
 
-# list_hasil = generate_ngrams(sent, ngram)
-# for pembobotan_positive
-#     if pisang ketemu di pembobotan
-#         temp = "pisang"
-#         for i in list_hasil
-#             if temp == i
-#                 count += 1
-#         delete pisang
-#     pembobotan_positive
+print('hasil: ', list_hasil)
+
+pos_var = 0
+
+for item in list_hasil:
+    with open('references/positive.txt') as pos:
+        for c in pos:
+            if item == c.replace('\n', ''):
+                pos_var += 1
+                sent = sent.replace(item, '', 1)
+
+print('hasil: ', sent, '\npos: ', pos_var)

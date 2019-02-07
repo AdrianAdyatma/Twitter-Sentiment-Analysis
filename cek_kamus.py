@@ -17,13 +17,25 @@ def cek():
                         break
 
 
-def cek_ngv_psv():
-    with open('references/positive.txt') as f:
+def cek_duplikat():
+    with open('references/negative.txt') as f:
         c = Counter(c.strip().lower() for c in f if c.strip())
     for line in c:
         if c[line] > 1:
             print(line)
 
+def cek_n_p():
+    count = 0
+    with open('references/positive.txt') as p:
+        for pos in p:
+            with open('references/negative.txt') as n:
+                for neg in n:
+                    if pos == neg:
+                        count +=1
+                        print(pos, neg)
+    print(count)
+
 
 # cek()
-cek_ngv_psv()
+cek_duplikat()
+cek_n_p()

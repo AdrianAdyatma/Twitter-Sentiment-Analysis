@@ -21,7 +21,6 @@ amanah
 amat
 ambisius
 andal
-aneh
 anggun
 angin sepoi-sepoi
 angkat
@@ -66,12 +65,10 @@ berbaik hati
 berbakat
 berbesar hati
 berbudi luhur
-bercacat
 bercahaya
 bercanda
 bercita-cita
 berdaya cipta
-berdebar
 berdedikasi
 berdikari
 berempati
@@ -152,15 +149,12 @@ bintang rock
 bisa digunakan
 bisa diterapkan
 bonus
-boros
 brilian
 cahaya
-cahaya redup
 cakap
 cantik
 cashbacks
 cekatan
-cemas
 cemerlang
 cepat
 cerah
@@ -174,6 +168,7 @@ cinta
 cocok
 contoh
 cukup
+cukup baik
 cukup besar
 cukuplah
 damai
@@ -191,7 +186,6 @@ dermawan
 dewasa
 diakses
 diakui
-diam
 dianggap baik
 dibaca
 dibebaskan
@@ -244,7 +238,6 @@ edukatif
 efektif
 efektivitas
 efisien
-egois
 ekonomis
 ekstase
 elastis
@@ -253,6 +246,7 @@ elite
 emas
 empati
 enak
+enchant
 enchantingly
 energi
 ergonomis
@@ -260,6 +254,7 @@ etis
 euforia
 evaluatif
 examplar
+example
 fajar
 fantastis
 fasih
@@ -272,7 +267,7 @@ fleksibel
 fleksibilitas
 futuristik
 gagah
-gaib
+gain
 gainfully
 gairah
 gamblang
@@ -286,7 +281,6 @@ gigih
 gokil
 gratis
 gurih
-habis
 hadiah
 hak istimewa
 halal
@@ -340,7 +334,6 @@ intim
 intrik
 intuitif
 irama
-iri
 istimewa
 isyarat
 jaminan
@@ -372,7 +365,6 @@ keaslian
 kebahagiaan
 kebaikan
 kebajikan
-kebal
 kebanggaan
 kebangkitan
 kebaruan
@@ -399,7 +391,6 @@ kegairahan
 kegembiraan
 kegembiraan yg meluap-luap
 kehangatan
-keheranan
 keindahan
 keinginan
 keintiman
@@ -408,7 +399,6 @@ kejelasan
 kejujuran
 kekaguman
 kekal
-kekalahan
 kekasih
 kekencangan
 kelancaran berbicara
@@ -439,7 +429,6 @@ kenangan
 kenikmatan
 kenyamanan
 kepanjangan akal daya
-kepentingan
 kepercayaan
 keperkasaan
 kepincut
@@ -452,6 +441,7 @@ kerelaan
 keren
 kerendahan hati
 keriangan
+kerinduan
 keriuhan di pawai
 kerubin
 kesabaran
@@ -460,7 +450,6 @@ kesatuan
 kesayangan
 kesehatan
 kesejahteraan
-kesembronoan
 kesempurnaan
 kesenangan
 kesetiaan
@@ -485,13 +474,13 @@ keuletan
 keunggulan
 keuntungan
 kewaspadaan
-khusus
 kilau
 klasik
 koheren
 koherensi
 komitmen
 kompak
+kompeten
 kompetitif
 komplementer
 konsisten
@@ -509,7 +498,6 @@ kuasa
 kuat
 kue panas
 kukuh
-kurus
 lagu
 lancar
 landasan
@@ -529,17 +517,15 @@ lebih memilih
 lebih murah
 lebih suka
 lebih tenang
-ledakan
 legendaris
 lemah lembut
 lembut
 lezat
-licin
 lincah
 liris
 logis
 loyalitas
-luar biasa
+luar biasa baik
 luas
 lucu
 lumayan
@@ -556,7 +542,6 @@ mampu
 manfaat
 manis
 manis sekali
-manja
 manjur
 mantab
 manusiawi
@@ -565,7 +550,6 @@ martabat
 master
 masuk akal
 matang
-mati-matian
 mau kalah
 mawas
 megah
@@ -969,13 +953,10 @@ sempurna
 semuanya
 senang
 sengaja
-sensasi
-sensasional
 senyum
 sepanjang masa
 sepantasnya
 sepatutnya
-sepele
 sepenuh hati
 seperti
 seperti malaikat
@@ -992,7 +973,6 @@ setajam silet
 setia
 setuju
 sewajarnya
-sewenang-wenang
 siap
 sigap
 sihir
@@ -1018,7 +998,6 @@ subur
 suci
 sukacita
 sukses
-sulit
 sungguh
 sungguh-sungguh
 super
@@ -1036,28 +1015,6 @@ tabungan
 tahan karat
 tahan lama
 tajam
-tak ada salahnya
-tak ada taranya
-tak berbahaya
-tak bercacat
-tak bersuara
-tak bersyarat
-tak dapat disangsikan
-tak diragukan lagi
-tak disengaja
-tak kenal takut
-tak perlu dipersoalkan
-tak tahu malu
-tak terbantahkan
-tak terbatas
-tak tergantikan
-tak terhitung
-tak terkalahkan
-tak terkendalikan
-tak terlupakan
-tak ternilai
-tak terpadai
-tak tertahankan
 takdir
 takjub
 takzim
@@ -1091,7 +1048,6 @@ terang benderang
 teranyar
 terbaik
 terbaru
-terbatas
 terbebani
 terberat
 terbersih
@@ -1110,9 +1066,7 @@ terima
 terima kasih
 terjamin
 terjangkau
-terkalahkan
 terkejar
-terkejut
 terkekang
 terkemuka
 terkenal
@@ -1127,7 +1081,6 @@ terompet
 terpadu
 terpanas
 terpelajar
-terpengaruh
 terpenting
 terpercaya
 terpesona
@@ -1144,9 +1097,26 @@ terutama
 tetap
 tiada bandingan
 tiada duanya
+tidak ada salahnya
+tidak ada taranya
+tidak berbahaya
+tidak bercacat
+tidak bersuara
+tidak bersyarat
+tidak dapat disangsikan
+tidak diragukan lagi
+tidak disengaja
 tidak egois
+tidak kenal takut
+tidak perlu dipersoalkan
+tidak sulit
+tidak terbantahkan
+tidak terbatas
+tidak tergantikan
+tidak terkalahkan
+tidak terlupakan
 tidak ternilai
-tipis
+tidak terpadai
 tokoh
 top
 trendi
@@ -1161,14 +1131,12 @@ unggulan
 unik
 untung
 untungnya
-utuh
 uye
 variasi
 visioner
 wah
 wahyu
 warna-warni
-waspada
 whooa
 whooooa
 wow

@@ -1,6 +1,5 @@
 11 12:mirip
 7an:tujuan
-:di
 ababil:abg labil
 abis:habis
 acc:setuju
@@ -702,6 +701,7 @@ muup:maaf
 muupz:maaf
 muuv:maaf
 mw:mau
+mz:mas
 nw:now watching
 n:dan
 nal:kenal
@@ -1016,6 +1016,7 @@ syp:siapa
 t4:tempat
 tabanas:tabungan pembangunan nasional
 tajir:kaya
+tak:tidak
 tar:nanti
 tau:tahu
 taun:tahun
