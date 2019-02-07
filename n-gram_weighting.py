@@ -16,12 +16,21 @@ def generate_ngrams(sentence, n):
 
 # sent = input("Masukkan kalimat : ")
 sent = "anda baik sekali alam mimpi itu indah terbaik melebihi alam mimpi"
-ngram = 2
-list_hasil = generate_ngrams(sent, ngram)
+list_hasil = generate_ngrams(sent, 2)
 
 print('hasil: ', list_hasil)
 
 pos_var = 0
+
+for item in list_hasil:
+    with open('references/positive.txt') as pos:
+        for c in pos:
+            if item == c.replace('\n', ''):
+                pos_var += 1
+                sent = sent.replace(item, '', 1)
+
+list_hasil = generate_ngrams(sent, 1)
+print(list_hasil)
 
 for item in list_hasil:
     with open('references/positive.txt') as pos:

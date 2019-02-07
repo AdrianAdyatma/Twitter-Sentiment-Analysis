@@ -1127,8 +1127,6 @@ memeras
 memerciki
 memerintahkan
 memfitnah
-memihak
-memikat
 memisahkan
 memiskinkan
 memohon
@@ -1141,7 +1139,6 @@ memperkosa
 memperlambat
 memperlemah
 mempersiapkan
-mempesona
 mempolemikkan
 memprihatinkan
 mempropagandakan
@@ -1221,7 +1218,6 @@ mengacaukan
 mengaku
 mengakui
 mengalah
-mengalahkan
 mengalihkan
 mengambil alih
 mengamputasi
@@ -1239,7 +1235,6 @@ mengecilkan hati
 mengejan
 mengejek
 mengejuntukan
-mengejutkan
 mengeksploitasi
 mengeluarkan
 mengeluarkan isi perut
@@ -1255,7 +1250,6 @@ mengerdilkan
 mengerikan
 mengering
 mengerjakan dengan kurang baik
-mengerti
 mengerut
 mengesalkan
 menggagalkan
@@ -1271,9 +1265,7 @@ menggelapkan
 menggelegar
 menggelepar
 menggeliat-geliut
-menggelikan
 menggelisahkan
-menggemparkan
 menggentari
 menggerakkan
 menggeram
@@ -1330,11 +1322,9 @@ mengotori
 mengotorkan
 mengoyakkan
 menguap
-menguasai
 mengumpat
 mengumumkan kekurangan
 mengundurkan diri
-menguntungkan
 mengurangi
 menguras
 mengusir
@@ -1348,7 +1338,6 @@ menindas
 meninggal
 meninggal dunia
 meninggalkan
-meningkat
 meninju
 menipu
 menitis
@@ -1368,7 +1357,6 @@ menjiplak tulisan
 menodai
 menohok
 menolak
-menonjol
 mentah
 menuduh
 menumbangkan
@@ -1395,11 +1383,9 @@ menyayangkan
 menyayat
 menyayat hati
 menyebalkan
-menyederhanakan
 menyedihkan
 menyelinap
 menyembunyikan
-menyenangkan
 menyengat
 menyentakkan
 menyepelekan
@@ -1464,8 +1450,6 @@ merusak
 merusak akhlak
 merusak bentuk
 merusakkan
-mewah
-meyakinkan
 mimpi buruk
 miring
 misinformasi
@@ -1487,7 +1471,6 @@ mungkir
 muntah
 muntahan
 muntahan kebencian
-murah
 murahan
 muram
 murka
@@ -1551,7 +1534,6 @@ otokrat
 otokratis
 otoriter
 overakting
-padat
 pagar
 pahit
 paksaan
@@ -1560,14 +1542,11 @@ paling kejam
 paling lambat
 paling menakutkan
 palsu
-panas
-panci
 pandangan marah
 pandangan yg menghinakan
 panggilan
 panggilan dari pengadilan
 panik
-panjang
 paradoks
 paradoksal
 parah
@@ -1580,10 +1559,8 @@ parodi
 partisan
 pasif
 pasrah
-pasti
 patah
 patah hati
-patuh
 patung
 payudara
 pecah
@@ -1621,7 +1598,6 @@ pembantaian
 pembatalan
 pembaur
 pembekuan
-pembela
 pembenci
 pembengkakan
 pemberang
@@ -1711,12 +1687,6 @@ penjara
 penjara gelap bawah tanah
 penjarah
 penolakan
-penuh
-penuh benci
-penuh celaan
-penuh curiga
-penuh dosa
-penuh sesal
 penumpasan
 penundaan
 penurunan
@@ -1758,7 +1728,6 @@ perebut
 perempuan jahanam
 perfidity
 pergolakan
-perhatian
 perih sekali
 peringatan
 perjuangan
@@ -1769,7 +1738,6 @@ perlu
 permohonan
 permusuhan
 perpecahan
-persahabatan
 persaingan
 perselisihan
 pertempuran
@@ -1811,7 +1779,6 @@ propaganda
 protes
 provokasi
 provokatif
-puas
 pucat
 pukulan
 punah
@@ -1825,7 +1792,6 @@ radikal
 radikalisasi
 ragu
 ragu-ragu
-rajin
 raksasa
 ramai
 rambut rontok
@@ -1843,7 +1809,6 @@ rasa tidak enak
 rasis
 rasisme
 reaksioner
-realistis
 rebusan
 redundansi
 redup
@@ -1880,7 +1845,6 @@ rumor
 runtuh
 rusak
 rusuh
-sabar
 sabotase
 sakit
 sakit dirancang
@@ -1918,13 +1882,6 @@ sambilan
 sampah
 sandal bakiak
 sandera
-sangat
-sangat efektif
-sangat jahat
-sangat lapar
-sangat marah
-sangat menakjubkan
-sangat sedikit
 sanggahan
 sarkasme
 sarkastik
@@ -1934,7 +1891,6 @@ satiris
 sayangnya
 sebelum waktunya
 sedang saja
-sederhana
 sedih
 sedikit
 segan

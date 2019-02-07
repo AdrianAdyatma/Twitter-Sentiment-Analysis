@@ -563,7 +563,6 @@ memadai
 memanggil
 memantapkan
 memastikan
-membandingi keindahan puisi
 membantu
 membara
 membayar
@@ -574,7 +573,6 @@ memberkati
 membesarkan hati
 membesut
 membiasakan
-membuat lebih baik dr
 membudayakan
 membujuk
 membuktikan
@@ -584,7 +582,6 @@ memenuhi
 memenuhi syarat
 memeriahkan
 memfavoritkan
-memihak
 memikat
 memikat hati
 memimpin
@@ -650,25 +647,21 @@ mengasyikan
 mengasyikkan
 mengatasi
 mengecoh
-mengejutkan
 mengerti
 mengesahkan
 mengesankan
 menggairahkan
 menggelenyar
-menggelikan
 menggelitik
 menggembirakan
 menggemparkan
 menggetarkan
 menggiurkan
-menggoda
 menggugah
 menghadiahkan
 menghaluskan
 menghargai
 mengharukan
-mengherankan
 menghibur
 menghidupkan
 menghormat
@@ -678,7 +671,6 @@ mengidolakan
 mengilhami
 menginginkan
 mengisyaratkan
-menguasai
 mengucapkan selamat
 mengundang
 mengungguli
@@ -687,12 +679,10 @@ menikmati
 menimbulkan perasaan cinta
 menimbulkan rasa antusias
 meninggikan
-meningkat
 meningkatkan
 menitipkan
 menjamin
 menjanjikan
-menonjol
 mentereng
 menunjukkan gejala
 menurut hak
@@ -709,11 +699,9 @@ menyenangkan
 menyerahkan
 menyeringai
 menyetujui
-menyolok
 menyubsidi
 menyukai
 menyusul
-merangsang
 merayakan
 merayu
 mereda
@@ -721,8 +709,6 @@ mereformasi
 merekomendasikan
 merelakan
 meremajakan
-merendahkan
-merenung
 merevitalisasi
 merevolusi
 merevolusionerkan
@@ -753,19 +739,15 @@ nasib
 nikmat
 non-kekerasan
 nyaman
-nyaring
 obat untuk segala penyakit
 obsesi
 optimal
 optimis
 optimisme
-otoriter
-padat
 pahlawan
 pahlawan wanita
 paling beruntung
 paling dikenal
-panas
 pandai berbicara
 panorama
 pantas
@@ -775,7 +757,6 @@ pasukan penjaga perdamaian
 patriot
 patriotik
 patuh
-pedih
 peka
 pelamun
 pelindung
@@ -817,24 +798,9 @@ penghormatan
 penguasaan
 peninggian derajat
 peningkatan
-penipu
 penjualan terbaik
 penolong
 penting
-penuh
-penuh gaya
-penuh harapan
-penuh kasih
-penuh kebahagiaan
-penuh kebajikan
-penuh kegembiraan
-penuh kepercayaan
-penuh pengharapan
-penuh perasaan
-penuh perhatian
-penuh peristiwa
-penuh semangat
-penuh sukacita
 penyayang
 penyelamat
 penyuburan
@@ -848,7 +814,6 @@ perdana menteri
 perhatian
 periang
 perjanjian
-perlawanan
 perlindungan
 permai
 permata
@@ -912,23 +877,10 @@ rohani
 rokstar
 romantis
 rujuk
-rumit
 sabar
 sah
 saleh
 salut
-sangat
-sangat baik
-sangat berharga
-sangat indah
-sangat memuaskan
-sangat menarik
-sangat menyayangi
-sangat mudah
-sangat penting
-sangat rajin
-sangat sopan
-sangat tepat
 sanjungan
 sarankan
 sayang

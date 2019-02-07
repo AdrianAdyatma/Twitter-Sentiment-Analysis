@@ -37,5 +37,5 @@ def cek_n_p():
 
 
 # cek()
-cek_duplikat()
+# cek_duplikat()
 cek_n_p()
