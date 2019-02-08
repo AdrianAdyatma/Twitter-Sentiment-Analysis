@@ -3,10 +3,10 @@ import re
 
 import formalization
 
-# import ngram_weighting
+import ngram_weighting
 
 sentence_example = "Presiden Jok0 Widodo a+ Jum'atan @jokowi https://mantap.com #Jokowi2Periode pada hari-hari ini bertemu dengan Bpk. Hj. Prabowo Subianto dan cipika cipiki dengan istri2nyaaa sebelum 7an!!! @pointer_ID https://t.co/Fys3PYcjlS"
-
+sentence_example = "Anda baik sekaliiii alam mimpi itu indah terbaik melebihi alam mimpi"
 
 def format_word(sentence):
     # Remove all alphanumeric character and word that starts with @, #, and http
@@ -52,8 +52,13 @@ def main_process(sentence):
 
     # Hasil formalisasi
     formed_sentence = (' '.join(list_temp))
-    print("\n", formed_sentence)
+    print("\nSudah di format :", formed_sentence)
+
+    # N-gram weighting
+    weight = ngram_weighting.weighting(formed_sentence)
+    print("\nBobot :", weight)
 
 
 if __name__ == '__main__':
+    # main()
     main_process(sentence_example)
