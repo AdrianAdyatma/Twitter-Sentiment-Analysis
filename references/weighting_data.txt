@@ -3268,6 +3268,7 @@ tidak masuk akal:-1
 tidak memadai:-1
 tidak mematuhi:-1
 tidak membantu:-1
+tidak memilih:-1
 tidak memiliki:-1
 tidak memuaskan:-1
 tidak menarik:-1

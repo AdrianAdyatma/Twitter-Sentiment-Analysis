@@ -34,9 +34,11 @@ def formalize(original):
             # print("masuk 1")
             return formalizing
         elif i == 0:
+            # Hilangkan angka
             # print("masuk 3")
             formalizing = ''.join([c for c in formalizing if not c.isdigit()])
         elif i == 1:
+            # Hilangkan karakter duplikat
             # print("masuk 4")
             formalizing = ''.join(c[0] for c in itertools.groupby(formalizing))
         i += 1
@@ -44,5 +46,5 @@ def formalize(original):
 
 
 # word = input("Masukkan kata : ")
-# print("Hasil : ", formalize2(word))
+# print("Hasil : ", formalize(word))
 

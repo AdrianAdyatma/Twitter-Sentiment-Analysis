@@ -57,6 +57,6 @@ def give_value():
 
 # cek_alay_kbbi()
 # cek_kembar_per_file()
-# cek_kembar_pos_neg()
+cek_kembar_pos_neg()
 # sort()
-give_value()
+# give_value()
