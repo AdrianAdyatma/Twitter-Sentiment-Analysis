@@ -19,13 +19,3 @@ sent = input("Masukkan kalimat : ")
 ngram = int(input("Masukkan (n)gram: "))
 list_hasil = generate_ngrams(sent, ngram)
 print('hasil: ', list_hasil,  list_hasil[0])
-
-# list_hasil = generate_ngrams(sent, ngram)
-# for pembobotan_positive
-#     if pisang ketemu di pembobotan
-#         temp = "pisang"
-#         for i in list_hasil
-#             if temp == i
-#                 count += 1
-#         delete pisang
-#     pembobotan_positive
