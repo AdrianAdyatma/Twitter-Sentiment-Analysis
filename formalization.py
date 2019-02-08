@@ -24,20 +24,20 @@ def formalize2(original):
 
 # Main formalization function
 def formalize(original):
-    formalizing = original.lower()
+    formalizing = original
     i = 0
     while i < 2:
         if formalize2(formalizing) is not None:
-            print("masuk 2")
+            # print("masuk 2")
             return formalize2(formalizing)
         elif formalize1(formalizing) is True:
-            print("masuk 1")
+            # print("masuk 1")
             return formalizing
         elif i == 0:
-            print("masuk 3")
+            # print("masuk 3")
             formalizing = ''.join([c for c in formalizing if not c.isdigit()])
         elif i == 1:
-            print("masuk 4")
+            # print("masuk 4")
             formalizing = ''.join(c[0] for c in itertools.groupby(formalizing))
         i += 1
     return formalizing
