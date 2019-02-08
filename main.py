@@ -2,12 +2,13 @@ from nltk.tokenize import TweetTokenizer
 import re
 
 import formalization
+import ngram_weighting
 
 sentence_example = "Presiden Jok0 Widodo mnt4p @jokowi #Jokowi2Periode pada hari-hari ini bertemu dengan Bpk. Hj. Prabowo Subianto dan cipika cipiki dengan istri2nyaaa sebelum 7an!!! @pointer_ID https://t.co/Fys3PYcjlS"
 
 
 def format_word(sentence):
-    # Remove all alphanumeric character and word that starts with @, #, and https
+    # Remove all alphanumeric character and word that starts with @, #, and http
     result1 = re.sub(r'http\S+|@(\w+)|#(\w+)|[^a-zA-Z0-9\s]', '', sentence).lower()
     result2 = re.sub(' +', ' ', result1).strip()
     return result2
@@ -16,6 +17,13 @@ def format_word(sentence):
 def tokenize(sentence):
     tokens = TweetTokenizer().tokenize(sentence)
     return tokens
+
+
+def main():
+    # Read tweet text data from SQL
+    # For every tweet, main_process() get called
+    # Return weighting data to be written to SQL
+    pass
 
 
 # Main process of system
