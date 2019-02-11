@@ -457,6 +457,7 @@ kesopanan:1
 kestabilan:1
 kesucian:1
 kesukaan:1
+kesuksesan:1
 kesungguhan:1
 ketabahan:1
 ketajaman:1

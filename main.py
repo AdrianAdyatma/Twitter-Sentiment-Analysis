@@ -1,24 +1,23 @@
-from nltk.tokenize import TweetTokenizer
 import re
-
+import nltk
 import formalization
 
 import ngram_weighting
 
-sentence_example = "Presiden Jok0 Widodo a+ Jum'atan @jokowi https://mantap.com #Jokowi2Periode pada hari-hari ini bertemu dengan Bpk. Hj. Prabowo Subianto dan cipika cipiki dengan istri2nyaaa sebelum 7an!!! @pointer_ID https://t.co/Fys3PYcjlS"
-sentence_example = "Anda baik sekaliiii alam mimpi itu indah terbaik melebihi alam mimpi"
+sentence_example = "Presiden Jokowi github.com/adrianadyatma telah berhasil menuntaskan janjinya pada akhir tahun, masa-masa kesuksesan tugas tsb dirayakan di Istana Bogor dengan keluarga. #JokowiAja https://t.co/WAOAW9sja"
+
 
 def format_word(sentence):
     # Remove all alphanumeric character and word that starts with @, #, and http
     # Also lower the case of sentence
-    result1 = re.sub(r'http\S+|@(\w+)|#(\w+)|[^a-zA-Z0-9\-\+\s]', '', sentence).lower()
-    result2 = re.sub(' +', ' ', result1).strip()
-    return result2
+    sentence = re.sub(r'http\S+|@(\w+)|#(\w+)', '', sentence).lower()
+    sentence = re.sub(' +', ' ', sentence).strip()
+    return sentence
 
 
 def tokenize(sentence):
-    # tokens = TweetTokenizer().tokenize(sentence)
-    tokens = [token for token in sentence.split(" ") if token != ""]
+    tokens = nltk.tokenize.word_tokenize(sentence)
+    # tokens = [token for token in sentence.split(" ") if token != ""]
     return tokens
 
 
