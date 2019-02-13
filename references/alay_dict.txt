@@ -48,7 +48,6 @@ apva:apa
 aq:saya
 aqu:aku
 aquwh:aku
-asap:sesegera mungkin
 asbun:asal bunyi
 aseek:asyik
 aseekk:asyik

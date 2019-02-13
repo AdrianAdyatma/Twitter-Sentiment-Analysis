@@ -4,13 +4,13 @@ import formalization
 
 import ngram_weighting
 
-sentence_example = "Presiden Jokowi github.com/adrianadyatma telah berhasil menuntaskan janjinya pada akhir tahun, masa-masa kesuksesan tugas tsb dirayakan di Istana Bogor dengan keluarga. #JokowiAja https://t.co/WAOAW9sja"
+sentence_example = "Jokowi... github.com/adrianadyatma @telah berhasil kesuksesan thn, masa-masa mant.ap/$#==~!@#$%^&*() https://asu.com keluarga. #JokowiAja https://t.co/WAOAW9sja"
 
 
 def format_word(sentence):
     # Remove all alphanumeric character and word that starts with @, #, and http
     # Also lower the case of sentence
-    sentence = re.sub(r'http\S+|@(\w+)|#(\w+)', '', sentence).lower()
+    sentence = re.sub(r'@\w+|#\w+|[!-\-/-~]+\.[!-\-/-~]+', '', sentence).lower()
     sentence = re.sub(' +', ' ', sentence).strip()
     return sentence
 
@@ -49,6 +49,7 @@ def main_process(sentence):
     #     print("--------", token, "=", formed_word)
     #     list_temp.append(formed_word)
 
+    # Formalisasi
     list_temp = [formalization.formalize(t) for t in tokenize(formatted)]
 
     # Hasil formalisasi

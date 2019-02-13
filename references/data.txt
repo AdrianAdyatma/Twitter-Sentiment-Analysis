@@ -16,10 +16,12 @@ ape = apa
  -- ape
 apes = sial
  -- apes
-asap = sesegera mungkin
- -- asap
 aspal = asli tetapi palsu
  -- aspal
+asu = anjing
+ -- asu
+au = tahu
+ -- au
 awak = saya
  -- awak
 bacot = banyak bicara
@@ -80,7 +82,7 @@ congor = mulut
  -- congor
 cuek = tidak acuh
  -- cuek
-cuman = Cuma
+cuman = cuma
  -- cuman
 cupu = culun
  -- cupu
@@ -296,6 +298,8 @@ songong = sombong
  -- songong
 sumpek = sempit
  -- sumpek
+tak = tidak
+ -- tak
 tar = nanti
  -- tar
 tau = tahu
@@ -314,7 +318,7 @@ tengok = menjenguk
  -- tengok
 tilang = bukti pelanggaran
  -- tilang
-tipi = TV
+tipi = televisi
  -- tipi
 togel = toto gelap
  -- togel

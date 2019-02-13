@@ -18,7 +18,7 @@ def cek_alay_kbbi():
 
 
 def cek_kembar_per_file():
-    with open(r'references/positive.txt') as f:
+    with open(r'references/negative.txt') as f:
         c = Counter(c.strip().lower() for c in f if c.strip())
     for line in c:
         if c[line] > 1:
@@ -55,8 +55,8 @@ def give_value():
             with open("references/neg_n.txt", "a") as pos2:
                 pos2.write(i.replace("\n", ":-1\n"))
 
-# cek_alay_kbbi()
+cek_alay_kbbi()
 # cek_kembar_per_file()
-cek_kembar_pos_neg()
+# cek_kembar_pos_neg()
 # sort()
 # give_value()
