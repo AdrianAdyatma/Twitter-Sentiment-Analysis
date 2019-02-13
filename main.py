@@ -37,17 +37,19 @@ def main_process(sentence):
     formatted = format_word(sentence)
     print(formatted, "\n")
 
-    # Tokenisasi kalimat menjadi list
-    tokens = tokenize(formatted)
-    print(tokens, "\n")
+    # # Tokenisasi kalimat menjadi list
+    # tokens = tokenize(formatted)
+    # print(tokens, "\n")
+    #
+    # # Formalisasi tiap token
+    # list_temp = []
+    # for token in tokens:
+    #     # Perbandingan tiap token sebelum dan sesudah formalisasi
+    #     formed_word = formalization.formalize(token)
+    #     print("--------", token, "=", formed_word)
+    #     list_temp.append(formed_word)
 
-    # Formalisasi tiap token
-    list_temp = []
-    for token in tokens:
-        # Perbandingan tiap token sebelum dan sesudah formalisasi
-        formed_word = formalization.formalize(token)
-        print("--------", token, "=", formed_word)
-        list_temp.append(formed_word)
+    list_temp = [formalization.formalize(t) for t in tokenize(formatted)]
 
     # Hasil formalisasi
     formed_sentence = (' '.join(list_temp))

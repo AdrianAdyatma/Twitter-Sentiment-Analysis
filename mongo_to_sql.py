@@ -13,7 +13,7 @@ for element in list_results:
             text = element["extended_tweet"]["full_text"]
             print(element["extended_tweet"]["full_text"], "\n=============")
             print("2")
-        #     sql = "INSERT INTO tabelmantap (id_str, text) VALUES (%s, %s)"
+        # sql = "INSERT INTO tabelmantap (id_str, text) VALUES (%s, %s)"
         # val = (element["id_str"], text)
         # cred.sqlCursor.execute(sql, val)
         #

@@ -13,10 +13,10 @@ def weighting(sentence):
     while n > 0:
         list_temp = generate_ngrams(sentence, n)
         for item_gram in list_temp:
-            with open('references/weighting_data.txt') as data:
+            with open(r'references/weighting_data.txt') as data:
                 for row in data:
                     kata, nilai = row.split(':')
-                    nilai = int(nilai.replace('\n', ''))
+                    nilai = int(nilai)
                     if item_gram == kata:
                         if nilai == 1:
                             weight += 1
