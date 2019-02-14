@@ -6,7 +6,7 @@ import formalization
 count = 0
 
 # Read documents in raw tweets collection then export to mongodb
-for element in cred.raw_findAll:
+for element in cred.findall_tweets:
     message = element["text"]
     tokens = TweetTokenizer().tokenize(message.lower())
 

@@ -55,7 +55,7 @@ def give_value():
             with open("references/neg_n.txt", "a") as pos2:
                 pos2.write(i.replace("\n", ":-1\n"))
 
-cek_alay_kbbi()
+# cek_alay_kbbi()
 # cek_kembar_per_file()
 # cek_kembar_pos_neg()
 # sort()

@@ -3,34 +3,50 @@ import tweepy
 
 import credentials_var as cred
 
+# User credentials to access Twitter API
+ACCESS_TOKEN = "94752564-BvP4ZNJawmbcBbZfl9V9fVxCMqBEw3C3XfspEZFbZ"
+ACCESS_TOKEN_SECRET = "tXyHXu7vJt6k3YlnPNm5JI8gBbfqIfQzOVWhlKzH1GNMS"
+CONSUMER_KEY = "VDUHKifMgzsf0z98tEeaqgBkU"
+CONSUMER_SECRET = "ukVf6fqYeqUeZ10WeMjv0a35DfZw79INqgzEM8Rat9y2pxncr5"
 
-class CustomStreamListener(tweepy.StreamListener):
-    count = 0
-
-    def __init__(self, api):
-        self.api = api
-        super(tweepy.StreamListener, self).__init__()
-        self.db = cred.mongoDb
-
-    def on_data(self, tweet):
-        full_data = json.loads(tweet)
-        print(full_data)
-        cred.raw_tweets.insert_one(full_data)
-
-    def on_error(self, status_code):
-        print(status_code)
-        if status_code == 420:
-            # returning False in on_data disconnects the stream
-            return False
-
-    def on_timeout(self):
-        return True
+# Twitter authentication
+auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+api = tweepy.API(auth)
 
 
-tweetStream = tweepy.Stream(cred.auth, CustomStreamListener(cred.api))
+def stream(keyword, limit):
+    class CustomStreamListener(tweepy.StreamListener):
 
-# The list of keywords for filtering tweets
-keywordList = ['jokowi','prabowo']
+        def __init__(self, api):
+            self.api = api
+            super(tweepy.StreamListener, self).__init__()
+            self.db = cred.TwitterDB
+            self.counter = 0
+            self.limit = limit
 
-# Start streaming tweets
-tweetStream.filter(track=keywordList)
+        def on_data(self, tweet):
+            full_data = json.loads(tweet)
+            full_data["keyword"] = keyword[0]
+            print(full_data)
+            cred.tweets.insert_one(full_data)
+
+            self.counter += 1
+            if self.counter < self.limit:
+                return True
+            else:
+                tweet_stream.disconnect()
+
+        def on_error(self, status_code):
+            print(status_code)
+            if status_code == 420:
+                # returning False in on_data disconnects the stream
+                return False
+
+        def on_timeout(self):
+            return True
+
+    tweet_stream = tweepy.Stream(auth, CustomStreamListener(api))
+
+    # Start streaming tweets
+    tweet_stream.filter(track=keyword)

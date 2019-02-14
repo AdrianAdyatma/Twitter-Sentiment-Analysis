@@ -2,7 +2,7 @@ import csv
 import itertools
 
 
-# First, check in formal word from KBBI
+# Check word from formal word from KBBI
 def formalize1(original):
     with open(r'references/kata_kelas_makna.tsv', encoding="utf8") as dictionary_1:
         reader = csv.DictReader(dictionary_1, dialect='excel-tab')
