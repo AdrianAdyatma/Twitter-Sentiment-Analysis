@@ -33,10 +33,9 @@ def mongo_to_sql(coll):
         retweet_count = element['retweet_count']
         favorite_count = element['favorite_count']
         keyword = element['keyword']
-        # weight = weighting.sentence_processing(text)
-        weight = 2
+        weight = weighting.sentence_processing(text)
 
-        print(text, "\n========================= weight : ", weight, "=========================\n")
+        print(tweet_id, "\n========================= weight : ", weight, "=========================\n")
 
         # HASHTAG DATA
         # hashtag = re.findall(r'#\w+', text)
