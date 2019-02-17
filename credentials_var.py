@@ -1,7 +1,6 @@
 import pymongo
 import mysql.connector
 
-
 # MySQL Database identifier & connection
 sql_db_name = "tweets_db"
 sqlDb = mysql.connector.connect(
@@ -13,9 +12,13 @@ sqlDb = mysql.connector.connect(
 sqlCursor = sqlDb.cursor()
 
 # MongoDB Database identifier & connection
-client = pymongo.MongoClient('localhost', 27017)
+client = pymongo.MongoClient("mongodb://localhost:27017/")
 TwitterDB = client.TwitterDB
-
 tweets = TwitterDB.tweets
-findall_tweets = tweets.find()
 
+# Find all tweets
+find_all = tweets.find()
+
+# Find unprocessed tweets
+unprocessed = {"processed": False}
+find_unprocessed = tweets.find(unprocessed)

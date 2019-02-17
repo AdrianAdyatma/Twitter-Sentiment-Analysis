@@ -1,6 +1,5 @@
 from dateutil import parser
 from datetime import timezone
-import re
 
 import ngram_weighting as weighting
 import credentials_var as cred
@@ -16,23 +15,30 @@ def mongo_to_sql(coll):
     def utc_to_local(utc_dt):
         return utc_dt.replace(tzinfo=timezone.utc).astimezone(tz=None)
 
+    count = 0
+
     for element in list(coll):
 
+        # Count data processed
+        count +=1
+        print(count)
+
         # USER DATA
-        user_id = element['user']['id_str']
+        user_id = int(element['user']['id_str'])
         user_name = element['user']['name']
         user_screen_name = element['user']['screen_name']
         user_created_at = utc_to_local(parser.parse(element['user']['created_at']))
 
         # TWEET DATA
         text = element['extended_tweet']['full_text'] if element['truncated'] is True else element['text']
-        tweet_id = element['id_str']
+        tweet_id = int(element['id_str'])
         tweet_created_at = utc_to_local(parser.parse(element['created_at']))
         quote_count = element['quote_count']
         reply_count = element['reply_count']
         retweet_count = element['retweet_count']
         favorite_count = element['favorite_count']
         keyword = element['keyword']
+        processed = element['processed']
         weight = weighting.sentence_processing(text)
 
         print(tweet_id, "\n========================= weight : ", weight, "=========================\n")
@@ -74,9 +80,13 @@ def mongo_to_sql(coll):
             cred.sqlCursor.execute(sql, val)
             cred.sqlDb.commit()
         except:
-            print(user_id, "export tweet to sql error")
+            print(tweet_id, "export tweet to sql error")
         else:
             count_tweet += 1
+            find = {'id_str': str(tweet_id)}
+            new_val = {'$set': {'processed': True}}
+
+            cred.tweets.update_one(find, new_val)
 
             # INSERT TABLE HASHTAG
             try:
@@ -99,7 +109,7 @@ def mongo_to_sql(coll):
                     cred.sqlCursor.execute(sql, val)
                     cred.sqlDb.commit()
             except:
-                print(user_id, tweet_id, url, "export tweet to sql error")
+                print(user_id, tweet_id, url, "export url to sql error")
             else:
                 for item in url:
                     count_url += 1
@@ -112,7 +122,7 @@ def mongo_to_sql(coll):
                     cred.sqlCursor.execute(sql, val)
                     cred.sqlDb.commit()
             except:
-                print(user_id, tweet_id, mention, "export tweet to sql error")
+                print(user_id, tweet_id, mention, "export mention to sql error")
             else:
                 for item in mention:
                     count_mention += 1

@@ -22,17 +22,18 @@ def stream(keyword, limit):
             self.api = api
             super(tweepy.StreamListener, self).__init__()
             self.db = cred.TwitterDB
-            self.counter = 0
+            self.counter = 1
             self.limit = limit
 
         def on_data(self, tweet):
             full_data = json.loads(tweet)
-            full_data["keyword"] = keyword[0]
-            print(full_data)
+            full_data['keyword'] = keyword[0]
+            full_data['processed'] = False
+            print(self.counter, full_data)
             cred.tweets.insert_one(full_data)
 
             self.counter += 1
-            if self.counter < self.limit:
+            if self.counter <= self.limit:
                 return True
             else:
                 tweet_stream.disconnect()

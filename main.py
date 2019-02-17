@@ -6,11 +6,11 @@ if __name__ == '__main__':
     # KEYWORD LENGTH LIMIT PER TEXT = 32
 
     keyword = ["Joko Widodo", "jokowi", "@jokowi"]
-    limit = 3
+    limit = 2450
     stream_twitter.stream(keyword, limit)
 
     keyword = ["Prabowo Subianto", "prabowo", "@prabowo"]
-    limit = 3
+    limit = 2450
     stream_twitter.stream(keyword, limit)
 
-    mongo_to_sql.mongo_to_sql(cred.findall_tweets)
+    mongo_to_sql.mongo_to_sql(cred.find_unprocessed)
