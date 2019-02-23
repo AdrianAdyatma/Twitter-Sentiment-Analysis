@@ -12,6 +12,9 @@ def mongo_to_sql(coll):
     count_url = 0
     count_mention = 0
 
+    user_error = 0
+    tweet_error = 0
+
     def utc_to_local(utc_dt):
         return utc_dt.replace(tzinfo=timezone.utc).astimezone(tz=None)
 
@@ -20,14 +23,15 @@ def mongo_to_sql(coll):
     for element in list(coll):
 
         # Count data processed
-        count +=1
-        print(count)
+        count += 1
+        print("\n[", count, "]")
 
         # USER DATA
         user_id = int(element['user']['id_str'])
         user_name = element['user']['name']
         user_screen_name = element['user']['screen_name']
         user_created_at = utc_to_local(parser.parse(element['user']['created_at']))
+        user_location = element['user']['location'] if element['user']['location'] is not None else ""
 
         # TWEET DATA
         text = element['extended_tweet']['full_text'] if element['truncated'] is True else element['text']
@@ -38,10 +42,9 @@ def mongo_to_sql(coll):
         retweet_count = element['retweet_count']
         favorite_count = element['favorite_count']
         keyword = element['keyword']
-        processed = element['processed']
         weight = weighting.sentence_processing(text)
 
-        print(tweet_id, "\n========================= weight : ", weight, "=========================\n")
+        print(tweet_id, "\n========================= weight : ", weight, "=========================")
 
         # HASHTAG DATA
         # hashtag = re.findall(r'#\w+', text)
@@ -51,7 +54,7 @@ def mongo_to_sql(coll):
         # URL DATA
         # url = re.findall(r'[!-\-/-~]+\.[!-\-/-~]+', text)
         urls = element['entities']['urls']
-        url = [item['expanded_url'] for item in urls]
+        url = [item['url'] for item in urls]
 
         # MENTION DATA
         # mention = re.findall(r'@\w+', text)
@@ -60,27 +63,30 @@ def mongo_to_sql(coll):
 
         # INSERT TABLE USER
         try:
-            sql = 'INSERT INTO tb_user (user_id, user_name, user_screen_name, user_created_at) ' \
-                  'VALUES (%s, %s, %s, %s)'
-            val = (user_id, user_name, user_screen_name, user_created_at)
+            sql = 'INSERT INTO tb_user (user_id, user_name, user_screen_name, user_location, ' \
+                  'user_created_at) ' \
+                  'VALUES (%s, %s, %s, %s, %s)'
+            val = (user_id, user_name, user_screen_name, user_location, user_created_at)
             cred.sqlCursor.execute(sql, val)
             cred.sqlDb.commit()
         except:
             print(user_id, "export user to sql error")
+            user_error += 1
         else:
             count_user += 1
 
         # INSERT TABLE TWEET
         try:
-            sql = 'INSERT INTO tb_tweet (user_id, tweet_id, text, tweet_created_at, quote_count, reply_count, ' \
-                  'retweet_count, favorite_count, keyword, weight)' \
-                  'VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'
-            val = (user_id, tweet_id, text, tweet_created_at, quote_count, reply_count,
-                   retweet_count, favorite_count, keyword, weight)
+            sql = 'INSERT INTO tb_tweet (user_id, tweet_id, text, tweet_created_at, user_location, ' \
+                  'quote_count, reply_count, retweet_count, favorite_count, keyword, weight)' \
+                  'VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'
+            val = (user_id, tweet_id, text, tweet_created_at, user_location, quote_count,
+                   reply_count, retweet_count, favorite_count, keyword, weight)
             cred.sqlCursor.execute(sql, val)
             cred.sqlDb.commit()
         except:
             print(tweet_id, "export tweet to sql error")
+            tweet_error += 1
         else:
             count_tweet += 1
             find = {'id_str': str(tweet_id)}
@@ -127,6 +133,7 @@ def mongo_to_sql(coll):
                 for item in mention:
                     count_mention += 1
 
+    print("\n", count_user, "user", count_tweet, "tweet", count_hashtag, "hashtag",
+          count_url, "url", count_mention, "mention")
 
-    print(count_user, "user", count_tweet, "tweet",
-          count_hashtag, "hashtag", count_url, "url", count_mention, "mention")
+    print(user_error, "user error", tweet_error, "tweet error")

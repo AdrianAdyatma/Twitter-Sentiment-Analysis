@@ -544,7 +544,7 @@ manfaat:1
 manis:1
 manis sekali:1
 manjur:1
-mantab:1
+mantap:1
 manusiawi:1
 mapan:1
 martabat:1

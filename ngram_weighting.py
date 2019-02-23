@@ -2,6 +2,8 @@ import re
 import nltk
 import emoji
 
+# import time
+
 import formalization
 
 
@@ -34,7 +36,6 @@ def weighting(sentence):
                         weight += 1
                     elif nilai == -1:
                         weight -= 1
-                    # # Print kata yang terbobot
                     # print("\nKata terbobot pada n", n, ":", item_gram)
                     sentence = sentence.replace(item_gram, '', 1)
                     break
@@ -49,12 +50,12 @@ def sentence_processing(sentence):
     # print(sentence)
 
     # Case folding kalimat awal
-    sentence = re.sub(r'@\w+|#\w+|[!-\-/-~]+\.[!-\-/-~]+', '', sentence).lower()
+    sentence = re.sub(r'@\w+|#\w+|[!-\-/-~]+\.[!-\-/-~]+\.[!-\-/-~]+', '', sentence)
     sentence = re.sub(r' +', ' ', sentence).strip()
     # print(sentence)
 
     # Formalisasi menjadi list token
-    list_temp = [formalization.formalize(t) for t in nltk.tokenize.word_tokenize(sentence)]
+    list_temp = [formalization.formalize(token) for token in nltk.tokenize.word_tokenize(sentence.lower())]
 
     # Hasil formalisasi disatukan kembali
     formed_sentence = (' '.join(list_temp))
@@ -63,5 +64,10 @@ def sentence_processing(sentence):
     # N-gram weighting
     return weighting(formed_sentence)
 
-
-# print(sentence_processing("@kumbang_dara Jokowi keren, Ind keren.👍👏👏 "))
+# if __name__ == '__main__':
+#     t = time.time()
+#
+#     sentence = input("Masukkan kalimat : ")
+#     print("Hasil :", sentence_processing(sentence))
+#
+#     print("Done in:", time.time() - t)

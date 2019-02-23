@@ -1,6 +1,8 @@
 import csv
 import itertools
 
+# import time
+
 
 # Check word from formal word from KBBI
 def formalize1(original):
@@ -19,20 +21,20 @@ def formalize2(original):
         for row in dictionary_2:
             un_baku, baku = row.split(':')
             if original == un_baku:
-                return baku.replace('\n', '')
+                return baku
 
 
 # Main formalization function
 def formalize(original):
     formalizing = original
     i = 0
-    while i < 2:
+    while i <= 2:
         if formalize2(formalizing) is not None:
             # print("masuk 2")
             return formalize2(formalizing)
-        elif formalize1(formalizing) is True:
-            # print("masuk 1")
-            return formalizing
+        # elif formalize1(formalizing) is True:
+        #     # print("masuk 1")
+        #     return formalizing
         elif i == 0:
             # Hilangkan angka
             # print("masuk 3")
@@ -45,6 +47,10 @@ def formalize(original):
     return formalizing
 
 
-# word = input("Masukkan kata : ")
-# print("Hasil : ", formalize(word))
-
+# if __name__ == '__main__':
+#     t = time.time()
+#
+#     word = input("Masukkan kata : ")
+#     print("Hasil :", formalize(word))
+#
+#     print("Done in:", time.time() - t)
