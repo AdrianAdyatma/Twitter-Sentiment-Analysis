@@ -44,6 +44,7 @@ def sort():
                 w.write(line)
                 print(line, end='')
 
+
 def give_value():
     with open(r"references/positive.txt") as pos1:
         for i in pos1:

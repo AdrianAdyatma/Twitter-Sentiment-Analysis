@@ -22,10 +22,6 @@ def mongo_to_sql(coll):
 
     for element in list(coll):
 
-        # Count data processed
-        count += 1
-        print("\n[", count, "]")
-
         # USER DATA
         user_id = int(element['user']['id_str'])
         user_name = element['user']['name']
@@ -44,22 +40,22 @@ def mongo_to_sql(coll):
         keyword = element['keyword']
         weight = weighting.sentence_processing(text)
 
-        print(tweet_id, "\n========================= weight : ", weight, "=========================")
-
         # HASHTAG DATA
-        # hashtag = re.findall(r'#\w+', text)
         hashtags = element['entities']['hashtags']
         hashtag = [item['text'] for item in hashtags]
 
         # URL DATA
-        # url = re.findall(r'[!-\-/-~]+\.[!-\-/-~]+', text)
         urls = element['entities']['urls']
         url = [item['url'] for item in urls]
 
         # MENTION DATA
-        # mention = re.findall(r'@\w+', text)
         mentions = element['entities']['user_mentions']
         mention = [item['screen_name'] for item in mentions]
+
+        # Count data processed
+        count += 1
+        print("\n[", count, "]", tweet_id)
+        print("=============================================== weight : ", weight)
 
         # INSERT TABLE USER
         try:
@@ -133,7 +129,7 @@ def mongo_to_sql(coll):
                 for item in mention:
                     count_mention += 1
 
-    print("\n", count_user, "user", count_tweet, "tweet", count_hashtag, "hashtag",
+    print("\n==", count_user, "user", count_tweet, "tweet", count_hashtag, "hashtag",
           count_url, "url", count_mention, "mention")
 
-    print(user_error, "user error", tweet_error, "tweet error")
+    print("==", user_error, "user error", tweet_error, "tweet error")

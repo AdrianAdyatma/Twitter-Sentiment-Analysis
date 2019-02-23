@@ -26,15 +26,16 @@ def stream(keyword, limit):
             self.limit = limit
 
         def on_data(self, tweet):
-            full_data = json.loads(tweet)
-            full_data['keyword'] = keyword[0]
-            full_data['processed'] = False
-            print(self.counter, full_data)
-            cred.tweets.insert_one(full_data)
-
-            self.counter += 1
             if self.counter <= self.limit:
-                return True
+                full_data = json.loads(tweet)
+                if not full_data['retweeted'] and 'RT @' not in full_data['text']:
+                    full_data['keyword'] = keyword[0]
+                    full_data['processed'] = False
+                    print(self.counter, full_data)
+                    cred.tweets.insert_one(full_data)
+
+                    self.counter += 1
+                    return True
             else:
                 tweet_stream.disconnect()
 

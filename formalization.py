@@ -1,7 +1,7 @@
 import csv
 import itertools
 
-# import time
+import time
 
 
 # Check word from formal word from KBBI

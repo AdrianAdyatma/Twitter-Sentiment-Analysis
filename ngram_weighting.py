@@ -2,7 +2,7 @@ import re
 import nltk
 import emoji
 
-# import time
+import time
 
 import formalization
 
@@ -50,7 +50,7 @@ def sentence_processing(sentence):
     # print(sentence)
 
     # Case folding kalimat awal
-    sentence = re.sub(r'@\w+|#\w+|[!-\-/-~]+\.[!-\-/-~]+\.[!-\-/-~]+', '', sentence)
+    sentence = re.sub(r'@\w+|#\w+|[!-\-/-~]+\.[!-\-/-~]+\.[!-\-/-~]+|[!-\-/-~]+\.[!-\-/-~]+|\\n', '', sentence)
     sentence = re.sub(r' +', ' ', sentence).strip()
     # print(sentence)
 
@@ -63,6 +63,7 @@ def sentence_processing(sentence):
 
     # N-gram weighting
     return weighting(formed_sentence)
+
 
 # if __name__ == '__main__':
 #     t = time.time()
