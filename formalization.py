@@ -6,22 +6,20 @@ import time
 
 # Check word from formal word from KBBI
 def formalize1(original):
-    with open(r'references/kata_kelas_makna.tsv', encoding="utf8") as dictionary_1:
-        reader = csv.DictReader(dictionary_1, dialect='excel-tab')
-        # Check every row for same word, if exists then return True, if doesn't then return False
-        for row in reader:
-            if original == row.get("kata"):
-                return True
+    reader = csv.DictReader(open(r'references/kata_kelas_makna.tsv', encoding="utf8"), dialect='excel-tab')
+    # Check every row for same word, if exists then return True, if doesn't then return False
+    for row in reader:
+        if original == row.get("kata"):
+            return True
 
 
 # Check word from 'alay' dictionary
 def formalize2(original):
-    with open(r'references/alay_dict.txt') as dictionary_2:
-        # Check every row for same word, if exists then return correct word, if doesn't then return False
-        for row in dictionary_2:
-            un_baku, baku = row.split(':')
-            if original == un_baku:
-                return baku
+    # Check every row for same word, if exists then return correct word, if doesn't then return False
+    for row in open(r'references/alay_dict.txt'):
+        un_baku, baku = row.split(':')
+        if original == un_baku:
+            return baku
 
 
 # Main formalization function
@@ -33,7 +31,7 @@ def formalize(original):
             # print("masuk 2")
             return formalize2(formalizing)
         # elif formalize1(formalizing) is True:
-        #     # print("masuk 1")
+        #     print("masuk 1")
         #     return formalizing
         elif i == 0:
             # Hilangkan angka

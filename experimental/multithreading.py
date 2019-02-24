@@ -3,25 +3,28 @@ import threading
 import multiprocessing
 
 
-def square(numbers):
-    print("square of numbers")
-    for n in numbers:
-        time.sleep(0.2)
-        print('square:', n * n)
+def calc_square(number):
+    print('Square:', number * number)
 
 
-def cube(numbers):
-    print("cube of numbers")
-    for n in numbers:
-        time.sleep(0.2)
-        print('cube:', n * n * n)
+def calc_quad(number):
+    print('Quad:', number * number * number * number)
 
 
-arr = [2, 3, 8, 9]
+if __name__ == "__main__":
+    t = time.time()
 
-t = time.time()
+    number = 73
+    thread1 = threading.Thread(target=calc_square, args=(number,))
+    thread2 = threading.Thread(target=calc_quad, args=(number,))
+    # Will execute both in parallel
+    thread1.start()
+    thread2.start()
+    # Joins threads back to the parent process
+    thread1.join()
+    thread2.join()
 
-# square(arr)
-# cube(arr)
+    # calc_square(number)
+    # calc_quad(number)
 
-print("Done in:", time.time() - t)
+    print("Took", time.time() - t)
