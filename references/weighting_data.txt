@@ -9,7 +9,6 @@ acungan jempol:1
 ada artinya:1
 ada reaksi:1
 ada salahnya:-1
-ada:1
 adaptif:1
 adiktif:-1
 adil:1
@@ -1318,6 +1317,9 @@ latency:-1
 lawan:-1
 layak:1
 lazim:1
+lebih:1
+lebih baik:1
+lebih buruk:-1
 lebam:-1
 lecet:-1
 ledakan:-1
@@ -2132,7 +2134,6 @@ partisan:-1
 pasien:1
 pasif:-1
 pasrah:-1
-pasti:1
 patah hati:-1
 patah:-1
 patriot:1
@@ -2586,7 +2587,6 @@ secepatnya:1
 sedang saja:-1
 sederhana:1
 sedih:-1
-sedikit:-1
 segan:-1
 segar:1
 segera:1
@@ -2631,7 +2631,6 @@ sepenuh hati:1
 seperti malaikat:1
 seperti patung:1
 seperti raja:1
-seperti:1
 serakah:-1
 seram:-1
 serampangan:-1
@@ -2753,7 +2752,6 @@ takjub:1
 takut:-1
 takzim:1
 tamak:-1
-tampak:1
 tampan:1
 tamparan:-1
 tanda:1

@@ -56,7 +56,7 @@ def weighting(sentence):
                         weight += 1
                     elif nilai == -1:
                         weight -= 1
-                    print("\nKata terbobot pada 2, n", n, ":", item_gram)
+                    # print("\nKata terbobot pada 1, n", n, ":", item_gram)
                     sentence = sentence.replace(item_gram, '', 1)
                     break
                 elif item_gram == "tidak "+kata:
@@ -64,7 +64,7 @@ def weighting(sentence):
                         weight -= 1
                     elif nilai == -1:
                         weight += 1
-                    print("\nKata terbobot pada 2, n", n, ":", item_gram)
+                    # print("\nKata terbobot pada 2, n", n, ":", item_gram)
                     sentence = sentence.replace(item_gram, '', 1)
                     break
         n -= 1
@@ -93,10 +93,10 @@ def sentence_processing(sentence):
     return weighting(formed_sentence)
 
 
-if __name__ == '__main__':
-    t = time.time()
-
-    sentence = input("Masukkan kalimat : ")
-    print("Hasil :", sentence_processing(sentence))
-
-    print("Done in:", time.time() - t)
+# if __name__ == '__main__':
+#     t = time.time()
+#
+#     sentence = input("Masukkan kalimat : ")
+#     print("Hasil :", sentence_processing(sentence))
+#
+#     print("Done in:", time.time() - t)

@@ -16,7 +16,8 @@ def reset():
 
 def give_val():
     cred.sqlCursor.execute(
-        'SELECT tweet_id, keyword, weight, text FROM tb_tweet WHERE validation = 0 AND NOT user_location = ""')
+        'SELECT tweet_id, keyword, weight, text FROM tb_tweet '
+        'WHERE validation = 0 AND NOT weight = 0 AND NOT user_location = ""')
 
     for item in cred.sqlCursor.fetchall():
         print("\n========= id:", item[0])
@@ -38,4 +39,5 @@ def give_val():
 
 if __name__ == '__main__':
     # reset()
-    give_val()
+    # give_val()
+    pass
