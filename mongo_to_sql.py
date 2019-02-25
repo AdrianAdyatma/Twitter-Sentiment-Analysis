@@ -29,12 +29,11 @@ def mongo_to_sql(coll):
         user_created_at = utc_to_local(parser.parse(element['user']['created_at']))
         user_location = element['user']['location'] if element['user']['location'] is not None else ""
 
-        print(type(user_id), user_id)
-        print(type(user_name), user_name)
-        print(type(user_screen_name), user_screen_name)
-        print(type(user_created_at), user_created_at)
-        print(type(user_location), user_location)
-
+        # print(type(user_id), user_id)
+        # print(type(user_name), user_name)
+        # print(type(user_screen_name), user_screen_name)
+        # print(type(user_created_at), user_created_at)
+        # print(type(user_location), user_location)
 
         # TWEET DATA
         text = element['extended_tweet']['full_text'] if element['truncated'] is True else element['text']

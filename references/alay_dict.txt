@@ -75,6 +75,7 @@ ayank:sayang
 ayok:ayo
 b4:sebelum
 bacot:banyak bicara
+bagos:bagus
 bakalan:akan
 bales:balas
 bandes:bantuan desa
@@ -332,7 +333,7 @@ fwd:diterukan
 fyi:sebagai informasi
 g:tidak
 ga:tidak
-gaada:tidak ada uang
+gaada:tidak ada
 gabisa:tidak bisa
 gag:tidak
 gahar:sangar

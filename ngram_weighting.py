@@ -23,6 +23,26 @@ def generate_ngrams(sentence, n):
     return [" ".join(ngram) for ngram in ngrams]
 
 
+# def weighting(sentence):
+#     n = 4
+#     weight = 0
+#     while n > 0:
+#         for item_gram in generate_ngrams(sentence, n):
+#             for row in open(r'references/weighting_data.txt'):
+#                 kata, nilai = row.split(':')
+#                 nilai = int(nilai)
+#                 if item_gram == kata:
+#                     if nilai == 1:
+#                         weight += 1
+#                     elif nilai == -1:
+#                         weight -= 1
+#                     # print("\nKata terbobot pada n", n, ":", item_gram)
+#                     sentence = sentence.replace(item_gram, '', 1)
+#                     break
+#         n -= 1
+#     return weight
+
+
 def weighting(sentence):
     n = 4
     weight = 0
@@ -36,7 +56,15 @@ def weighting(sentence):
                         weight += 1
                     elif nilai == -1:
                         weight -= 1
-                    # print("\nKata terbobot pada n", n, ":", item_gram)
+                    print("\nKata terbobot pada 2, n", n, ":", item_gram)
+                    sentence = sentence.replace(item_gram, '', 1)
+                    break
+                elif item_gram == "tidak "+kata:
+                    if nilai == 1:
+                        weight -= 1
+                    elif nilai == -1:
+                        weight += 1
+                    print("\nKata terbobot pada 2, n", n, ":", item_gram)
                     sentence = sentence.replace(item_gram, '', 1)
                     break
         n -= 1
@@ -65,10 +93,10 @@ def sentence_processing(sentence):
     return weighting(formed_sentence)
 
 
-# if __name__ == '__main__':
-#     t = time.time()
-#
-#     sentence = input("Masukkan kalimat : ")
-#     print("Hasil :", sentence_processing(sentence))
-#
-#     print("Done in:", time.time() - t)
+if __name__ == '__main__':
+    t = time.time()
+
+    sentence = input("Masukkan kalimat : ")
+    print("Hasil :", sentence_processing(sentence))
+
+    print("Done in:", time.time() - t)

@@ -7,14 +7,13 @@ def cek_alay_kbbi():
     with open(r'references/alay_dict.txt') as alay:
         for row1 in alay:
             un_baku, baku = row1.split(':')
-            with open(r'references/kata_kelas_makna.tsv', encoding="utf8") as kbbi:
-                reader = csv.DictReader(kbbi, dialect='excel-tab')
-                for row2 in reader:
-                    if un_baku == row2.get("kata"):
-                        with open('references/data.txt', 'a') as data:
-                            data.write(str(un_baku + " = " + baku + " -- " + row2.get("kata") + "\n"))
-                        print(un_baku, "=", baku, "--", row2.get("kata"))
-                        break
+            reader = csv.DictReader(open(r'references/kata_kelas_makna.tsv', encoding="utf8"), dialect='excel-tab')
+            for row2 in reader:
+                if un_baku == row2.get("kata"):
+                    with open('references/data.txt', 'a') as data:
+                        data.write(str(un_baku + " = " + baku + " -- " + row2.get("kata") + "\n"))
+                    print(un_baku, "=", baku, "--", row2.get("kata"))
+                    break
 
 
 def cek_kembar_per_file():
@@ -38,26 +37,47 @@ def cek_kembar_pos_neg():
 
 
 def sort():
-    with open(r'references/positive.txt', 'r') as r:
+    with open(r'references/positive_old.txt') as r:
         for line in sorted(r):
-            with open(r'references/positive.txt', 'a') as w:
+            with open(r'references/positive_n.txt', 'a') as w:
+                w.write(line)
+                print(line, end='')
+    with open(r'references/negative_old.txt') as r:
+        for line in sorted(r):
+            with open(r'references/negative_n.txt', 'a') as w:
                 w.write(line)
                 print(line, end='')
 
 
+def sort_weight():
+    with open(r'references/weighting_data.txt') as doc:
+        for line in sorted(doc):
+            with open(r'references/weighting_data_new.txt', 'a') as new_doc:
+                new_doc.write(line)
+                print(line, end='')
+
+
 def give_value():
-    with open(r"references/positive.txt") as pos1:
-        for i in pos1:
-            with open("references/pos_n.txt", "a") as pos2:
-                pos2.write(i.replace("\n", ":1\n"))
+    with open('references/positive.txt') as pos1:
+        for text in pos1:
+            text = text.replace("\n", "")
+            text = text + ":1\n"
+            with open(r'references/pos_n.txt', 'a') as pos2:
+                pos2.write(text)
 
-    with open(r"references/negative.txt") as pos1:
-        for i in pos1:
-            with open("references/neg_n.txt", "a") as pos2:
-                pos2.write(i.replace("\n", ":-1\n"))
+    with open(r'references/negative.txt') as pos1:
+        for text in pos1:
+            text = text.replace("\n", "")
+            text = text + ":-1\n"
+            with open(r'references/neg_n.txt', 'a') as pos2:
+                pos2.write(text)
 
-# cek_alay_kbbi()
-# cek_kembar_per_file()
-# cek_kembar_pos_neg()
-# sort()
-# give_value()
+
+if __name__ == '__main__':
+    # cek_alay_kbbi()
+    # cek_kembar_per_file()
+    # cek_kembar_pos_neg()
+    # sort()
+    # sort_weight()
+    # give_value()
+    pass
